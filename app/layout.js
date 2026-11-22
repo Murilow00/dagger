@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
           </footer>
         </Providers>
       </body>
+      <Analytics />
     </html>
   );
 }
