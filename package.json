@@ -1,0 +1,23 @@
+{
+  "name": "daggerheart-mesa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mesa online de Daggerheart: fichas, rolagens ao vivo, biblioteca, bestiário e campanhas.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:srd": "node scripts/build-srd.mjs",
+    "build:pt": "node scripts/apply-pt.mjs",
+    "test:rules": "node scripts/test-rules.mjs"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "ioredis": "^6.0.0"
+  }
+}
