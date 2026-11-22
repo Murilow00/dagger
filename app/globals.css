@@ -170,3 +170,70 @@ table.t { width: 100%; border-collapse: collapse; font-size: .9rem; } table.t th
   .nav .wrap { flex-wrap: wrap; height: auto; padding: 8px 0; row-gap: 4px; }
   .brand { margin-right: auto; font-size: 1.05rem; } .nav .links { order: 5; flex-basis: 100%; }
 }
+
+/* Responsividade geral */
+@media (max-width: 1080px) {
+  main.wrap.page > .grid[style*="gridTemplateColumns"],
+  main.wrap.page > .grid[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  .thr { grid-template-columns: 1fr auto 1fr auto 1fr; }
+  .log { max-height: 420px; }
+}
+
+@media (max-width: 760px) {
+  .wrap { width: min(1180px, 100% - 24px); }
+  .page { padding: 18px 0 48px; }
+  .nav .wrap { padding-inline: 0; }
+  .nav select { max-width: 135px; }
+  .nav .btn.sm { padding-inline: 8px; }
+  .nav .links { width: 100%; }
+  .nav a.link { padding: 7px 9px; }
+  .panel { padding: 14px; }
+  .g2, .g3 { grid-template-columns: 1fr; }
+  .row { gap: 8px; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; }
+  .tabs button { flex: 0 0 auto; padding-inline: 12px; }
+  .hero-home { padding-top: 22px; gap: 18px; }
+  .hero-dice { gap: 14px; padding: 20px 8px; }
+  .hero-dice svg { width: 84px; height: 84px; }
+  .hero-home .row { align-items: stretch; }
+  .hero-home .row .btn { flex: 1 1 180px; }
+  .sheet-grid [style*="repeat(3,1fr)"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .thr { gap: 4px; }
+  .thr .n { padding-inline: 7px; }
+  .mini-card { min-width: 0; overflow-wrap: anywhere; }
+  .dice-overlay.compact { inset: auto 8px 8px auto; width: calc(100vw - 16px); max-width: 360px; }
+  .dice-row { max-width: calc(100vw - 24px); }
+  .wiz-steps { gap: 5px; }
+  .wiz-steps span { flex: 1 1 140px; text-align: center; }
+  .choice { min-width: 0; }
+  table.t { display: block; overflow-x: auto; white-space: nowrap; }
+  table.t thead, table.t tbody { min-width: 560px; }
+  input, select, textarea { min-width: 0; }
+}
+
+@media (max-width: 520px) {
+  .wrap { width: calc(100% - 20px); }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.35rem; }
+  .brand { font-size: 1rem; }
+  .brand .pair i { width: 12px; height: 12px; }
+  .nav select { max-width: 118px; font-size: .72rem !important; }
+  .nav .btn.sm { font-size: .78rem; }
+  .row.between { align-items: flex-start; }
+  .sheet-grid [style*="repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+  .hero-dice svg { width: 72px; height: 72px; }
+  .hero-dice { gap: 8px; }
+  .rollbar { width: 100%; }
+  .rollbar .chip, .rollbar .btn { flex: 1 1 auto; }
+  .fearbar i { width: 15px; height: 22px; }
+  .thr { font-size: .78rem; }
+  .thr .n { font-size: 1.2rem; }
+  .exp { flex-wrap: wrap; }
+  .dice-stage { padding-inline: 10px; }
+  .die { width: 82px; height: 82px; }
+  .die.small { width: 64px; height: 64px; }
+  .dice-overlay.compact .die { width: 52px; height: 52px; }
+  .dice-overlay.compact .die.small { width: 42px; height: 42px; }
+  .sheet { overflow-wrap: anywhere; }
+  .party-card .in { padding-inline: 12px; }
+}
