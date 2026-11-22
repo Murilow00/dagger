@@ -1,6 +1,7 @@
 import './globals.css';
 import Providers from '@/components/Providers.jsx';
 import Nav from '@/components/Nav.jsx';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = { title: 'Mesa de Daggerheart', description: 'Fichas, rolagens ao vivo, biblioteca e campanhas de Daggerheart.' };
 export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#121832' };
